@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Store features | WT Farley Store Owner's Guide</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">WT FARLEY</span>
+      <span class="sub">Store Owner's Guide</span>
+    </div>
+    <button class="menu-btn" type="button">&#9776; Menu</button>
+    <div class="side-title">Start here</div>
+    <ul class="nav">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="getting-started.html">Getting around Shopify</a></li>
+    </ul>
+    <div class="side-title">Editing your store</div>
+    <ul class="nav">
+      <li><a href="products.html">Products</a></li>
+      <li><a href="configurator.html">Configurator products</a></li>
+      <li><a href="pages-navigation.html">Pages &amp; navigation</a></li>
+      <li><a href="store-features.html" class="active">Store features</a></li>
+    </ul>
+    <div class="side-title">Editing each page</div>
+    <ul class="nav">
+      <li><a href="theme-editor.html">The theme editor</a></li>
+      <li><a href="page-home.html">Homepage</a></li>
+      <li><a href="page-product.html">Product page</a></li>
+      <li><a href="page-collection.html">Collection pages</a></li>
+      <li><a href="page-cart-search.html">Cart &amp; search</a></li>
+      <li><a href="page-content.html">Content pages</a></li>
+      <li><a href="page-header-footer.html">Header, menu &amp; footer</a></li>
+    </ul>
+    <div class="side-title">Feature deep-dives</div>
+    <ul class="nav">
+      <li><a href="feature-custom.html">Custom features</a></li>
+      <li><a href="feature-widgets.html">Marketing widgets</a></li>
+    </ul>
+    <div class="side-title">Reference</div>
+    <ul class="nav">
+      <li><a href="section-catalog.html">Section catalog</a></li>
+      <li><a href="glossary.html">Glossary &amp; FAQ</a></li>
+    </ul>
+    <div class="side-foot">Your medical gas equipment store, built on Shopify Plus.<br><br>Prepared by Makro Agency.</div>
+  </aside>
+  <main class="content">
+    <section class="hero"><div class="wrap">
+      <p class="eyebrow">Editing your store</p>
+      <h1>Store features and day to day running</h1>
+      <p>The special features built for WT Farley, plus the everyday jobs of handling orders, customers, shipping, and discounts.</p>
+    </div></section>
+    <div class="wrap">
+
+      <div class="lede-block">
+        <p>This page has two halves. The first three sections cover the special features we built just for WT Farley: the part-number lookup, the gas-type switcher, and the layered pictures on your build-your-own products. The rest cover the everyday jobs every Shopify store owner does, like handling orders, looking after customers, setting up shipping, and creating discounts. You do not need to read it end to end. Use the list below to jump to whatever you need today.</p>
+      </div>
+
+      <div class="toc">
+        <h4>On this page</h4>
+        <ol>
+          <li><a href="#sku-lookup">SKU lookup search</a></li>
+          <li><a href="#gas-switcher">Gas-type switcher</a></li>
+          <li><a href="#images">Configurator product images</a></li>
+          <li><a href="#orders">Orders</a></li>
+          <li><a href="#customers">Customers and B2B</a></li>
+          <li><a href="#shipping">Shipping</a></li>
+          <li><a href="#discounts">Discounts</a></li>
+          <li><a href="#analytics">Analytics</a></li>
+        </ol>
+      </div>
+
+      <h2 id="sku-lookup">SKU lookup search</h2>
+      <p>Your store has a part-number lookup built right into the header, at the top of every page. A customer who already knows the WT Farley part number they want does not have to browse or guess at search words. They simply type the part number, and the store takes them straight to the matching product, ready to configure or buy.</p>
+      <p>This is a custom feature we built into your theme especially for the way your customers shop. It sits alongside your normal navigation and works on both desktop and mobile.</p>
+
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>Here is what a customer sees. They click into the lookup field in the header, type a WT Farley part number, and pick the matching result. The store then opens that product's page so they can choose their options or add it to the cart. It is designed for professionals who buy by part number and want to skip the browsing.</p>
+      </div>
+
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>Because the lookup is a built-in feature of your theme rather than a setting you change in the admin, any changes to how it works, such as how it matches part numbers or where it appears, should go through your developer. Please do not try to alter it yourself.</p>
+      </div>
+
+      <h2 id="gas-switcher">Gas-type switcher</h2>
+      <p>Many of your hose and regulator products come in several gas types. On those product pages a shopper can switch the gas type right there on the page, for example between Oxygen, Air, Vacuum, Nitrogen, Nitrous Oxide, and CO2, and jump straight to the matching product. They do not have to go back to search and start again.</p>
+      <p>This works because each product carries a list of its sibling products. When a shopper picks a different gas, the store sends them to the sibling product for that gas.</p>
+
+      <div class="field">
+        <span class="fname">custom.gas_group</span>
+        <span class="ftype">product list</span>
+        <p>The list of related products that appear as switchable gas options on the product page. Each product in a family points to the other members of that family, so the shopper can move between gas types in one click.</p>
+      </div>
+
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>If you ever add a new gas variation to a family, the whole family's lists need to stay matching, so that every product points to all the others. This is easy to get half-done, which leaves some gas options missing. Please ask your developer to update the group so every product in the family points to the others.</p>
+      </div>
+
+      <h2 id="images">Configurator product images</h2>
+      <p>On your build-your-own (configurator) products, the picture is not a single photo. It is built by stacking several image layers on top of each other, so the picture can update to reflect the options a customer chooses. That way the shopper sees something close to the item they are actually building.</p>
+      <p>This is set up on a product-by-product basis. You do not manage it from this page.</p>
+
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>The full details of how layered images and build-your-own products are set up live on the <a href="configurator.html">Configurator products</a> page. Start there whenever you are working with these products.</p>
+      </div>
+
+      <h2 id="orders">Orders</h2>
+      <p>The Orders area is where every order that comes into your store is listed, newest first. It is the heart of your day-to-day work. From here you review what was bought, get it out the door, and handle anything that changes after the sale.</p>
+
+      <h3>View an order</h3>
+      <ol class="steps">
+        <li><strong>Open Orders.</strong> In the left menu go to <span class="path"><span class="seg">Orders</span></span>. You will see the full list of orders.</li>
+        <li><strong>Click the order number.</strong> Each row shows an order number such as #1001. Click it to open the order.</li>
+        <li><strong>Review the details.</strong> Check the items ordered, the customer, and the shipping address before you do anything else.</li>
+      </ol>
+
+      <h3>Fulfil an order</h3>
+      <p>Fulfilling means marking an order as sent, which triggers the customer's shipping email.</p>
+      <ol class="steps">
+        <li><strong>Open the order.</strong> Go to <span class="path"><span class="seg">Orders</span></span> and click the order you are shipping.</li>
+        <li><strong>Start fulfilment.</strong> Click <strong>Fulfill item(s)</strong>.</li>
+        <li><strong>Add tracking.</strong> If you have a tracking number and carrier, enter them so the customer can follow their parcel.</li>
+        <li><strong>Mark as fulfilled.</strong> Confirm, and the customer automatically receives a shipping confirmation email.</li>
+      </ol>
+
+      <h3>Print a packing slip</h3>
+      <ol class="steps">
+        <li><strong>Open the order.</strong> From <span class="path"><span class="seg">Orders</span></span>, click the order.</li>
+        <li><strong>Open More actions.</strong> Click <strong>More actions</strong> near the top of the order.</li>
+        <li><strong>Print.</strong> Choose <strong>Print packing slip</strong> and print it to include in the box.</li>
+      </ol>
+
+      <h3>Refund an order</h3>
+      <ol class="steps">
+        <li><strong>Open the order.</strong> From <span class="path"><span class="seg">Orders</span></span>, click the order.</li>
+        <li><strong>Click Refund.</strong> Use the <strong>Refund</strong> button on the order.</li>
+        <li><strong>Choose what to refund.</strong> Select specific items, or enter an amount to refund.</li>
+        <li><strong>Confirm.</strong> Click <strong>Refund</strong> to send the money back to the customer.</li>
+      </ol>
+
+      <h3>Cancel an order</h3>
+      <ol class="steps">
+        <li><strong>Open the order.</strong> From <span class="path"><span class="seg">Orders</span></span>, click the order.</li>
+        <li><strong>Open More actions.</strong> Click <strong>More actions</strong>.</li>
+        <li><strong>Cancel.</strong> Choose <strong>Cancel order</strong> and follow the prompts.</li>
+      </ol>
+
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>You will also get an email whenever an order comes in, which is handy as a heads-up. The Orders area in the admin is always the source of truth, though. Work from there, not from your inbox, when you are shipping, refunding, or checking what was ordered.</p>
+      </div>
+
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>Refunds and cancellations are hard to undo once confirmed. A refund sends money back to the customer, and a cancellation closes the order. Double-check the items and amounts before you confirm either one.</p>
+      </div>
+
+      <h2 id="customers">Customers and B2B</h2>
+      <p>The Customers area holds a record for every customer, including their contact details and order history. It is where you look someone up when they call or email with a question.</p>
+      <p>Your store is on Shopify Plus, which supports B2B. That means approved trade customers can have company accounts and see wholesale pricing instead of the normal retail price. Each product's wholesale price is held in a dedicated field.</p>
+
+      <div class="field">
+        <span class="fname">custom.wtfarley_b2b_price</span>
+        <span class="ftype">price</span>
+        <p>Where a product's wholesale (trade) price is stored. This is edited on the product itself. See the <a href="products.html">Products</a> page for how to open a product and edit its fields.</p>
+      </div>
+
+      <h3>Find a customer and view their orders</h3>
+      <ol class="steps">
+        <li><strong>Open Customers.</strong> In the left menu go to <span class="path"><span class="seg">Customers</span></span>.</li>
+        <li><strong>Search.</strong> Type the customer's name or email in the search box to find their record.</li>
+        <li><strong>Open the record.</strong> Click the customer to see their details and a list of every order they have placed.</li>
+        <li><strong>Open an order.</strong> Click any order in their history to jump into it, just like in the Orders area.</li>
+      </ol>
+
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>Company accounts for your trade customers are also managed in the Customers area. Setting up and adjusting B2B companies and their pricing can get involved, so for anything beyond finding a customer or checking their orders, it is best to work with your developer.</p>
+      </div>
+
+      <h2 id="shipping">Shipping</h2>
+      <p>Your shipping rates and methods, which are the choices a customer sees at checkout, live in your store settings. Some of your larger medical gas items ship by freight rather than standard parcel, so their product pages may ask the customer to call for an accurate shipping quote. The phone number to call appears on those product pages. Other products carry a fixed shipping cost stored in a field.</p>
+
+      <div class="field">
+        <span class="fname">custom.fixed_ship_cost</span>
+        <span class="ftype">price</span>
+        <p>A set shipping cost attached to a particular product, used where an item always ships for the same amount.</p>
+      </div>
+
+      <h3>View your shipping rates</h3>
+      <ol class="steps">
+        <li><strong>Open Settings.</strong> Click <strong>Settings</strong> at the bottom of the left menu.</li>
+        <li><strong>Go to Shipping and delivery.</strong> Choose <span class="path"><span class="seg">Settings</span><span class="sep">&rsaquo;</span><span class="seg">Shipping and delivery</span></span>.</li>
+        <li><strong>Review your rates.</strong> Here you can see the shipping methods and prices customers are offered at checkout.</li>
+      </ol>
+
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>Shipping rules affect the checkout for every single order, so a small change can have a wide effect. Always place a test order after any change to confirm the right options appear. For freight items or anything to do with how rates are calculated, involve your developer before making changes.</p>
+      </div>
+
+      <h2 id="discounts">Discounts</h2>
+      <p>The Discounts area lets you offer money off, either through a code a customer types at checkout or as an automatic discount that applies on its own.</p>
+
+      <h3>Create a discount code</h3>
+      <ol class="steps">
+        <li><strong>Open Discounts.</strong> In the left menu go to <span class="path"><span class="seg">Discounts</span></span>.</li>
+        <li><strong>Start a new discount.</strong> Click <strong>Create discount</strong>.</li>
+        <li><strong>Choose the type.</strong> Pick a set amount off or a percentage off.</li>
+        <li><strong>Set the code.</strong> Enter the code you want customers to type, for example SPRING10.</li>
+        <li><strong>Set limits and dates.</strong> Add any usage limits and the start and end dates.</li>
+        <li><strong>Save.</strong> Click <strong>Save</strong>, and the code is live for the dates you set.</li>
+      </ol>
+
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>You can also create automatic discounts, which need no code at all. The discount simply applies at checkout when its conditions are met. You set these up in the same Discounts area, choosing an automatic discount instead of a code.</p>
+      </div>
+
+      <h2 id="analytics">Analytics</h2>
+      <p>The Analytics area shows how your store is doing: your sales over time, how many orders you have taken, and which products are selling best.</p>
+      <ol class="steps">
+        <li><strong>Open Analytics.</strong> In the left menu go to <span class="path"><span class="seg">Analytics</span></span>.</li>
+        <li><strong>Read the reports.</strong> Review your sales, orders, and top products for the date range you choose.</li>
+      </ol>
+
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>For a quick daily snapshot, the Home dashboard, the first screen you see when you log in, shows recent sales and activity at a glance without opening the full Analytics area.</p>
+      </div>
+
+      <div class="pager">
+        <a href="pages-navigation.html"><div class="dir">Back</div><div class="ttl">&lsaquo; Pages &amp; navigation</div></a>
+        <a class="next" href="theme-editor.html"><div class="dir">Next</div><div class="ttl">The theme editor &rsaquo;</div></a>
+      </div>
+      <div class="foot">WT Farley Store Owner's Guide.</div>
+    </div>
+  </main>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

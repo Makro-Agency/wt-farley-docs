@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Custom features | WT Farley Store Owner's Guide</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">WT FARLEY</span>
+      <span class="sub">Store Owner's Guide</span>
+    </div>
+    <button class="menu-btn" type="button">&#9776; Menu</button>
+    <div class="side-title">Start here</div>
+    <ul class="nav">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="getting-started.html">Getting around Shopify</a></li>
+    </ul>
+    <div class="side-title">Editing your store</div>
+    <ul class="nav">
+      <li><a href="products.html">Products</a></li>
+      <li><a href="configurator.html">Configurator products</a></li>
+      <li><a href="pages-navigation.html">Pages &amp; navigation</a></li>
+      <li><a href="store-features.html">Store features</a></li>
+    </ul>
+    <div class="side-title">Editing each page</div>
+    <ul class="nav">
+      <li><a href="theme-editor.html">The theme editor</a></li>
+      <li><a href="page-home.html">Homepage</a></li>
+      <li><a href="page-product.html">Product page</a></li>
+      <li><a href="page-collection.html">Collection pages</a></li>
+      <li><a href="page-cart-search.html">Cart &amp; search</a></li>
+      <li><a href="page-content.html">Content pages</a></li>
+      <li><a href="page-header-footer.html">Header, menu &amp; footer</a></li>
+    </ul>
+    <div class="side-title">Feature deep-dives</div>
+    <ul class="nav">
+      <li><a href="feature-custom.html" class="active">Custom features</a></li>
+      <li><a href="feature-widgets.html">Marketing widgets</a></li>
+    </ul>
+    <div class="side-title">Reference</div>
+    <ul class="nav">
+      <li><a href="section-catalog.html">Section catalog</a></li>
+      <li><a href="glossary.html">Glossary &amp; FAQ</a></li>
+    </ul>
+    <div class="side-foot">Your medical gas equipment store, built on Shopify Plus.<br><br>Prepared by Makro Agency.</div>
+  </aside>
+  <main class="content">
+    <section class="hero"><div class="wrap">
+      <p class="eyebrow">Feature deep-dives</p>
+      <h1>Your custom features</h1>
+      <p>The special tools built for WT Farley beyond a standard store: the part-number lookup, the gas-type switcher, the layered configurator images, and the product specifications, documents, and reviews. Here is how each works and what you can edit.</p>
+    </div></section>
+    <div class="wrap">
+      <div class="lede-block">These features were built specifically for the way your customers shop for medical gas equipment. Some have wording you can edit yourself, and some are wired to code or data best changed with your developer. Each section below is clear about which is which.</div>
+
+      <div class="toc"><h4>On this page</h4><ol>
+        <li><a href="#lookup">The part-number lookup</a></li>
+        <li><a href="#predictive">Predictive search</a></li>
+        <li><a href="#gas">The gas-type switcher</a></li>
+        <li><a href="#layering">Configurator image layering</a></li>
+        <li><a href="#specs">Specifications, documents, and certifications</a></li>
+        <li><a href="#related">Complementary and recommended products</a></li>
+        <li><a href="#reviews">Product reviews</a></li>
+        <li><a href="#b2b">B2B wholesale pricing</a></li>
+      </ol></div>
+
+      <h2 id="lookup">The part-number lookup</h2>
+      <p>Your store has a part-number lookup in the header. A customer who already knows a WT Farley part number can type it and be taken straight to the matching product to configure or buy, skipping the browsing. It is designed for professionals who order by part number.</p>
+      <p>The wording around the lookup is editable in your theme settings, so you can keep the messages and the phone number current yourself. Open
+        <span class="path"><span class="seg">Online Store</span><span class="sep">&rsaquo;</span><span class="seg">Themes</span><span class="sep">&rsaquo;</span><span class="seg">Customize</span></span>,
+        open <strong>Theme settings</strong> (the gear icon), then <strong>Search</strong>. Under the Lookup headings you will find:</p>
+      <div class="field"><span class="fname">No Results Message</span><span class="ftype">text</span><p>What a shopper sees if their part number is not found. Safe to edit.</p></div>
+      <div class="field"><span class="fname">Browse Products Button Text and Link</span><span class="ftype">text and link</span><p>The label and destination of the button offered when there are no results. Safe to edit.</p></div>
+      <div class="field"><span class="fname">Phone Number</span><span class="ftype">text</span><p>The number shown so a customer can call for help. Keep this current. Safe to edit.</p></div>
+      <div class="field"><span class="fname">Suggestion Message, Start Button Text and Link</span><span class="ftype">text and link</span><p>The prompt and button shown to guide a shopper into the lookup. Safe to edit.</p></div>
+      <ol class="steps">
+        <li><strong>Open theme settings.</strong> In the theme editor, click the gear icon, then <strong>Search</strong>.</li>
+        <li><strong>Edit the lookup wording.</strong> Update the message, phone number, or button text you want to change.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+      <div class="callout callout--dont">
+        <span class="clabel">Do not</span>
+        <p>The same Search settings include a <strong>Lookup API URL</strong> and a <strong>Lookup API bearer token</strong>. These connect the lookup to its data service and are technical. Please leave them to your developer, as a wrong value stops the lookup from finding products.</p>
+      </div>
+
+      <h2 id="predictive">Predictive search</h2>
+      <p>Alongside the part-number lookup, the normal search box can show suggestions as a shopper types. This is called predictive search. You can turn it on or off and choose what detail appears on the suggested product cards.</p>
+      <ol class="steps">
+        <li><strong>Open theme settings.</strong> In the theme editor, click the gear icon, then <strong>Search</strong>.</li>
+        <li><strong>Toggle predictive search.</strong> Use <strong>Enable predictive search</strong>.</li>
+        <li><strong>Choose card details.</strong> Set whether the suggestions show the vendor, a second image on hover, the price, and so on, then Save.</li>
+      </ol>
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>Predictive search and the results page are covered further on the <a href="page-cart-search.html">Cart and search</a> page.</p>
+      </div>
+
+      <h2 id="gas">The gas-type switcher</h2>
+      <p>On many hose and regulator products, a shopper can switch the gas type right on the product page, for example between Oxygen, Air, Vacuum, Nitrogen, Nitrous Oxide, and CO2, and jump straight to the matching product. This saves them going back to search.</p>
+      <p>It works because each product carries a list of its sibling products. When a shopper picks a different gas, the store sends them to the sibling for that gas.</p>
+      <div class="field"><span class="fname">custom.gas_group</span><span class="ftype">product list</span><p>The related products offered as switchable gas options on the product page. Each product in a family should list the other members.</p></div>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>For the switcher to work in every direction, all products in a gas family must list each other. If you add a new gas variation, ask your developer to update the whole family so every product points to the others.</p>
+      </div>
+
+      <h2 id="layering">Configurator image layering</h2>
+      <p>On build-your-own configurator products, the picture is built by stacking image layers so it can reflect the chosen options. There is a base image, a stacking order per option group, and an image layer per choice.</p>
+      <div class="field"><span class="fname">custom.cfg_stack_base</span><span class="ftype">image</span><p>The base picture that the option layers sit on top of.</p></div>
+      <div class="field"><span class="fname">Layer order and layer image</span><span class="ftype">on option groups and choices</span><p>Each option group has a stacking order, and each choice can carry its own image layer that appears when selected.</p></div>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>The layers are matching, full-size images aligned pixel for pixel. A replacement must be the same size and alignment or it will look off. For new layer artwork, work with your designer. The full detail is on the <a href="configurator.html">Configurator products</a> page.</p>
+      </div>
+
+      <h2 id="specs">Specifications, documents, and certifications</h2>
+      <p>Product pages can show a specifications table, downloadable documents, and certification images. These come from fields on each product, and from blocks on the product page layout.</p>
+      <div class="field"><span class="fname">custom.specification_content</span><span class="ftype">rich text</span><p>The specifications shown on the product page. Edited on the product itself. Safe to edit.</p></div>
+      <div class="field"><span class="fname">custom.documents</span><span class="ftype">files</span><p>Spec sheets and manuals offered for download. Upload or remove files on the product. Safe to edit.</p></div>
+      <ol class="steps">
+        <li><strong>Open the product.</strong> Go to
+          <span class="path"><span class="seg">Products</span></span> and open the product.</li>
+        <li><strong>Edit the specification or documents fields.</strong> Scroll to the Metafields area and update the specifications text or the document files.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>Whether the specifications, documents, and certification blocks appear on the page, and in what order, is set on the product page layout in the theme editor. See <a href="page-product.html">The product page</a>.</p>
+      </div>
+
+      <h2 id="related">Complementary and recommended products</h2>
+      <p>Product pages can show two kinds of extra product rows: complementary products that you choose by hand, and recommended products that Shopify picks automatically based on shopper behaviour.</p>
+      <div class="field"><span class="fname">custom.related_products</span><span class="ftype">product list</span><p>Products you specifically want to suggest alongside this one. Edited on the product.</p></div>
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>The layout and headings of these rows are set on the product page. See the Complementary and Recommended sections on <a href="page-product.html">The product page</a>.</p>
+      </div>
+
+      <h2 id="reviews">Product reviews</h2>
+      <p>Your theme is styled to work with the Judge.me reviews app. If reviews are collected, they can appear on product pages in your store's style. The styling toggle is in
+        <span class="path"><span class="seg">Online Store</span><span class="sep">&rsaquo;</span><span class="seg">Themes</span><span class="sep">&rsaquo;</span><span class="seg">Customize</span></span>
+        under <strong>Theme settings</strong>, then <strong>Reviews</strong>. The reviews themselves are managed inside the Judge.me app.</p>
+
+      <h2 id="b2b">B2B wholesale pricing</h2>
+      <p>Your store supports business (B2B) customers, who can see wholesale prices. Each product's wholesale price is held in a field on the product.</p>
+      <div class="field"><span class="fname">custom.wtfarley_b2b_price</span><span class="ftype">price</span><p>The wholesale price for approved trade customers. Edited on the product.</p></div>
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>Company accounts and how B2B customers are approved are covered on the <a href="store-features.html">Store features</a> page.</p>
+      </div>
+
+      <div class="pager">
+        <a href="page-header-footer.html"><div class="dir">Back</div><div class="ttl">&lsaquo; Header, menu &amp; footer</div></a>
+        <a class="next" href="feature-widgets.html"><div class="dir">Next</div><div class="ttl">Marketing widgets &rsaquo;</div></a>
+      </div>
+      <div class="foot">WT Farley Store Owner's Guide.</div>
+    </div>
+  </main>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

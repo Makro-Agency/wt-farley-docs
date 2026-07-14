@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product page | WT Farley Store Owner's Guide</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">WT FARLEY</span>
+      <span class="sub">Store Owner's Guide</span>
+    </div>
+    <button class="menu-btn" type="button">&#9776; Menu</button>
+    <div class="side-title">Start here</div>
+    <ul class="nav">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="getting-started.html">Getting around Shopify</a></li>
+    </ul>
+    <div class="side-title">Editing your store</div>
+    <ul class="nav">
+      <li><a href="products.html">Products</a></li>
+      <li><a href="configurator.html">Configurator products</a></li>
+      <li><a href="pages-navigation.html">Pages &amp; navigation</a></li>
+      <li><a href="store-features.html">Store features</a></li>
+    </ul>
+    <div class="side-title">Editing each page</div>
+    <ul class="nav">
+      <li><a href="theme-editor.html">The theme editor</a></li>
+      <li><a href="page-home.html">Homepage</a></li>
+      <li><a href="page-product.html" class="active">Product page</a></li>
+      <li><a href="page-collection.html">Collection pages</a></li>
+      <li><a href="page-cart-search.html">Cart &amp; search</a></li>
+      <li><a href="page-content.html">Content pages</a></li>
+      <li><a href="page-header-footer.html">Header, menu &amp; footer</a></li>
+    </ul>
+    <div class="side-title">Feature deep-dives</div>
+    <ul class="nav">
+      <li><a href="feature-custom.html">Custom features</a></li>
+      <li><a href="feature-widgets.html">Marketing widgets</a></li>
+    </ul>
+    <div class="side-title">Reference</div>
+    <ul class="nav">
+      <li><a href="section-catalog.html">Section catalog</a></li>
+      <li><a href="glossary.html">Glossary &amp; FAQ</a></li>
+    </ul>
+    <div class="side-foot">Your medical gas equipment store, built on Shopify Plus.<br><br>Prepared by Makro Agency.</div>
+  </aside>
+  <main class="content">
+    <section class="hero"><div class="wrap">
+      <p class="eyebrow">Editing each page</p>
+      <h1>The product page</h1>
+      <p>Every product page is built from the same set of blocks: the title, price, variant picker, buy buttons, documents, and more. This page explains each block and its settings, and how the page differs for build-your-own configurator products.</p>
+    </div></section>
+    <div class="wrap">
+
+      <div class="lede-block">
+        <p>There are two different things people mean when they say "edit the product page", and it helps to keep them apart.</p>
+        <p><strong>The layout</strong> is the arrangement of blocks on the page: which pieces appear, in what order, and how each one is set up. You edit the layout once, in the theme editor, and your choice applies to <em>every</em> product at the same time. That is what this page covers.</p>
+        <p><strong>The content</strong> is the words and pictures for one particular item: its title, price, photos, description, and stock. You edit that on the product itself, under the Products area of your admin. For anything to do with a single product's own details, please head to the <a href="products.html">Products</a> page.</p>
+      </div>
+
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>A quick way to remember it: if a change should affect <strong>all</strong> products (for example, hiding the SKU everywhere), you make it in the theme editor described here. If a change affects <strong>one</strong> product (for example, a new price for a single hose), you make it on that product under <span class="path"><span class="seg">Products</span></span>. See the <a href="products.html">Products</a> page for that.</p></div>
+
+      <div class="toc">
+        <h4>On this page</h4>
+        <ol>
+          <li><a href="#open">Opening the product page in the theme editor</a></li>
+          <li><a href="#blocks">The blocks on a product page</a></li>
+          <li><a href="#reorder">Reordering, adding, and hiding blocks</a></li>
+          <li><a href="#section-settings">Whole-page settings</a></li>
+          <li><a href="#complementary">Complementary products</a></li>
+          <li><a href="#recommended">Recommended products</a></li>
+          <li><a href="#specifications">Specifications</a></li>
+          <li><a href="#configurator">Configurator products are different</a></li>
+        </ol>
+      </div>
+
+      <h2 id="open">Opening the product page in the theme editor</h2>
+      <p>All the layout settings on this page live in the theme editor. Because every product shares one layout, you open any single product to edit the template, and your changes apply across the whole store.</p>
+
+      <ol class="steps">
+        <li><strong>Open the theme editor.</strong> Go to <span class="path"><span class="seg">Online Store</span><span class="sep">&rsaquo;</span><span class="seg">Themes</span><span class="sep">&rsaquo;</span><span class="seg">Customize</span></span>.</li>
+        <li><strong>Switch to a product page.</strong> At the very top of the editor there is a page dropdown that usually starts on your homepage. Open it, choose <strong>Products</strong>, then pick <strong>Default product</strong>. The editor now shows a real product so you can see your changes in a true preview.</li>
+        <li><strong>Find the Product information section.</strong> In the left-hand list of sections, click <strong>Product information</strong>. Its blocks open up beneath it. Each block is one part of the page.</li>
+        <li><strong>Click a block to edit it.</strong> Selecting a block shows its settings on the left. Change what you need.</li>
+        <li><strong>Save.</strong> Press <strong>Save</strong> at the top right. Nothing goes live until you save.</li>
+      </ol>
+
+      <div class="callout callout--warn"><span class="clabel">Take care</span><p>Layout changes here apply to <strong>all</strong> products at once. Preview the page before you save, and remember that removing a block (say, the price) removes it from every product page in the store.</p></div>
+
+      <h2 id="blocks">The blocks on a product page</h2>
+      <p>The <strong>Product information</strong> section is made up of blocks. Each block below is a part of the page you can turn on, turn off, reorder, and set up. Here is every block and exactly what its settings do.</p>
+
+      <h3>Text</h3>
+      <p>A small line of free text you can place anywhere among the other blocks, for a short note or label.</p>
+      <div class="field"><span class="fname">Text</span><span class="ftype">text</span><p>The words shown. Type whatever short line you want to display.</p></div>
+
+      <h3>Heading</h3>
+      <p>The product title, taken automatically from the product's name. You do not type the title here; you only choose how large it looks.</p>
+      <div class="field"><span class="fname">Heading size</span><span class="ftype">choice</span><p>How large the product title appears on the page. Pick from the size options offered.</p></div>
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>To change the actual title wording, edit the product under <span class="path"><span class="seg">Products</span></span>. See the <a href="products.html">Products</a> page.</p></div>
+
+      <h3>Description</h3>
+      <p>Shows the product's description text on the page. The words come from each product's own description field.</p>
+      <div class="field"><span class="fname">Description</span><span class="ftype">text</span><p>Controls how the description is shown for the block. The description wording itself is set per product under <span class="path"><span class="seg">Products</span></span>.</p></div>
+
+      <h3>Price</h3>
+      <p>Shows the price. Two extra lines of small print can appear underneath it.</p>
+      <div class="field"><span class="fname">Show "Tax included".</span><span class="ftype">on / off</span><p>When on, a small "Tax included" note appears under the price. Turn it on only if your prices already include tax.</p></div>
+      <div class="field"><span class="fname">Show "Shipping calculated at checkout".</span><span class="ftype">on / off</span><p>When on, a note tells customers that shipping is worked out at checkout.</p></div>
+
+      <h3>SKU</h3>
+      <p>Displays the product's SKU (its stock code) on the page. This block has no settings of its own. Turn it on to show the SKU, off to hide it. The SKU value itself is set per product.</p>
+
+      <h3>Inventory</h3>
+      <p>Shows the stock status, such as "In stock" or "Sold out".</p>
+      <div class="field"><span class="fname">Show quantity</span><span class="ftype">on / off</span><p>When on, the exact number in stock is shown (for example "12 in stock") instead of just a status. Leave off if you prefer not to reveal counts.</p></div>
+
+      <h3>Variant picker</h3>
+      <p>The chooser customers use to select an option, such as a size or a colour, on products that offer choices.</p>
+      <div class="field"><span class="fname">Type</span><span class="ftype">choice</span><p>How the choices are presented, for example as buttons or as a drop-down menu. Pick the style you prefer.</p></div>
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>This is the plain option chooser used by simple and variant products. Build-your-own configurator products replace it with a fuller option builder. See <a href="#configurator">Configurator products are different</a> below.</p></div>
+
+      <h3>Buy buttons</h3>
+      <p>The Add to cart area, plus optional quick-checkout buttons and your own extra buttons for quotes and expert help.</p>
+      <div class="field"><span class="fname">Show dynamic checkout buttons</span><span class="ftype">on / off</span><p>When on, express buttons such as Shop Pay appear so customers can skip straight to checkout.</p></div>
+      <div class="field"><span class="fname">Show quantity field</span><span class="ftype">on / off</span><p>When on, customers can choose how many to buy before adding to the cart.</p></div>
+      <div class="field"><span class="fname">Show recipient information form for gift card products</span><span class="ftype">on / off</span><p>Only relevant to gift card products. When on, buyers can enter a recipient to send the gift card to. You can leave this off unless you sell gift cards.</p></div>
+      <div class="field"><span class="fname">Request a Quote URL</span><span class="ftype">web address</span><p>The link the "Request a Quote" button opens. Paste the address of your quote page or form.</p></div>
+      <div class="field"><span class="fname">Request a Quote Button Text</span><span class="ftype">text</span><p>The wording on the quote button, for example "Request a Quote".</p></div>
+      <div class="field"><span class="fname">Ask an Expert URL</span><span class="ftype">web address</span><p>The link the "Ask an Expert" option opens, for example a contact page.</p></div>
+      <div class="field"><span class="fname">Ask an Expert Link Text</span><span class="ftype">text</span><p>The wording for the Ask an Expert link.</p></div>
+
+      <h3>Icon with text</h3>
+      <p>Up to two small reassurance lines, each with an icon, such as "Ships within 24 hours" or "MRI safe". Handy for trust points under the buy area.</p>
+      <div class="field"><span class="fname">Icon</span><span class="ftype">choice</span><p>The picture shown beside the first line. Choose from the icon list.</p></div>
+      <div class="field"><span class="fname">Text</span><span class="ftype">text</span><p>The words for the first line.</p></div>
+      <div class="field"><span class="fname">Icon</span><span class="ftype">choice</span><p>The picture shown beside the second line.</p></div>
+      <div class="field"><span class="fname">Text second</span><span class="ftype">text</span><p>The words for the second line. Leave blank if you only want one line.</p></div>
+
+      <h3>Share</h3>
+      <p>Buttons that let a customer share the product on social sites or copy its link. Each channel is a simple on or off switch.</p>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Setting</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Facebook</strong></td><td>When on, shows a Facebook share button.</td></tr>
+            <tr><td><strong>Twitter</strong></td><td>When on, shows a Twitter (X) share button.</td></tr>
+            <tr><td><strong>Telegram</strong></td><td>When on, shows a Telegram share button.</td></tr>
+            <tr><td><strong>Reddit</strong></td><td>When on, shows a Reddit share button.</td></tr>
+            <tr><td><strong>Copy link</strong></td><td>When on, shows a button that copies the product link to the clipboard.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Pickup availability</h3>
+      <p>Shows whether the item can be collected at your locations. It has no settings of its own; it uses the pickup options set up in your store's shipping settings. Turn the block on to show pickup status, off to hide it.</p>
+
+      <h3>Documents</h3>
+      <p>Offers downloadable files, such as spec sheets and manuals, for the product. The files themselves are attached per product; this block controls the heading above them.</p>
+      <div class="field"><span class="fname">Section Title</span><span class="ftype">text</span><p>The heading shown above the download links, for example "Documents" or "Spec sheets".</p></div>
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>The actual files come from a product field on each product. To add or swap a document for one product, edit that product's documents field under <span class="path"><span class="seg">Products</span></span>. See the <a href="products.html">Products</a> page.</p></div>
+
+      <h3>Return Policy Link</h3>
+      <p>A single link to your returns policy, shown near the buy area.</p>
+      <div class="field"><span class="fname">Return Policy URL</span><span class="ftype">web address</span><p>The link the return policy points to. Paste the address of your returns page.</p></div>
+      <div class="field"><span class="fname">Link Text</span><span class="ftype">text</span><p>The wording of the link, for example "View our return policy".</p></div>
+
+      <h3>Certification Images</h3>
+      <p>Shows up to three small badge or certification images, such as compliance or quality marks.</p>
+      <div class="field"><span class="fname">Certification Image 1</span><span class="ftype">image</span><p>The first badge. Click to choose an image from your library or upload one.</p></div>
+      <div class="field"><span class="fname">Certification Image 2</span><span class="ftype">image</span><p>The second badge. Optional.</p></div>
+      <div class="field"><span class="fname">Certification Image 3</span><span class="ftype">image</span><p>The third badge. Optional.</p></div>
+
+      <h3>Popup</h3>
+      <p>A link that opens a small pop-up window of extra information, such as sizing help or care notes.</p>
+      <div class="field"><span class="fname">Link label</span><span class="ftype">text</span><p>The clickable wording that opens the pop-up.</p></div>
+      <div class="field"><span class="fname">Page</span><span class="ftype">page picker</span><p>An existing page whose content you want to show inside the pop-up. Choose one from the list.</p></div>
+      <div class="field"><span class="fname">Heading</span><span class="ftype">text</span><p>The title shown at the top of the pop-up window.</p></div>
+      <div class="field"><span class="fname">Text</span><span class="ftype">rich text</span><p>The words inside the pop-up. You can add bold text, links, and lists using the toolbar.</p></div>
+
+      <h3>Countdown</h3>
+      <p>A ticking countdown timer, useful for a limited-time offer. It counts down to a date and time you set.</p>
+      <div class="field"><span class="fname">Color scheme</span><span class="ftype">colour choice</span><p>Which of your store's colour schemes the timer uses.</p></div>
+      <div class="field"><span class="fname">End date</span><span class="ftype">text</span><p>The date the countdown ends. Enter it in the format shown in the editor.</p></div>
+      <div class="field"><span class="fname">End time</span><span class="ftype">text</span><p>The time of day the countdown ends.</p></div>
+      <div class="field"><span class="fname">Date font size</span><span class="ftype">choice</span><p>How large the numbers on the timer appear.</p></div>
+      <div class="field"><span class="fname">After the timer ends</span><span class="ftype">choice</span><p>What happens when the countdown reaches zero, for example hiding the timer or showing a message.</p></div>
+      <div class="field"><span class="fname">Text</span><span class="ftype">rich text</span><p>A short heading shown with the timer.</p></div>
+      <div class="field"><span class="fname">Description</span><span class="ftype">text</span><p>A line of description shown beneath the timer heading.</p></div>
+
+      <h3>Custom liquid</h3>
+      <p>An advanced block for custom code. It lets a developer drop specialist content into the page.</p>
+      <div class="field"><span class="fname">Custom liquid</span><span class="ftype">code</span><p>Holds custom code. Please leave this to your Makro contact; there is nothing you need to change here day to day.</p></div>
+      <div class="callout callout--dont"><span class="clabel">Do not</span><p>Do not edit or delete a Custom liquid block unless a developer asks you to. These blocks can power important pieces of the page, and changing the code can break how the page works.</p></div>
+
+      <h2 id="reorder">Reordering, adding, and hiding blocks</h2>
+      <p>You arrange blocks in the same left-hand list where you find them. Here are the everyday edits.</p>
+
+      <h4>Reorder the blocks on the product page</h4>
+      <ol class="steps">
+        <li><strong>Open the theme editor</strong> at <span class="path"><span class="seg">Online Store</span><span class="sep">&rsaquo;</span><span class="seg">Themes</span><span class="sep">&rsaquo;</span><span class="seg">Customize</span></span> and switch to a product page.</li>
+        <li><strong>Open Product information</strong> in the left-hand list so its blocks show.</li>
+        <li><strong>Drag a block up or down.</strong> Grab the block by the handle beside its name and drag it to its new spot. The preview updates as you move it.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <h4>Turn a block on or off</h4>
+      <ol class="steps">
+        <li><strong>Find the block</strong> in the Product information list.</li>
+        <li><strong>Use the eye icon.</strong> Click the small eye beside the block name to hide it, or click again to show it. Hidden blocks stay in the list so you can bring them back later.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <h4>Add a new block</h4>
+      <ol class="steps">
+        <li><strong>Open Product information</strong> in the left-hand list.</li>
+        <li><strong>Click "Add block"</strong> at the bottom of its block list.</li>
+        <li><strong>Pick the block</strong> you want from the menu (for example, Certification Images).</li>
+        <li><strong>Set it up and place it.</strong> Fill in its settings, then drag it to where you want it.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>Hiding a block with the eye icon is safer than removing it. A hidden block keeps all its settings, so you can switch it back on any time without setting it up again.</p></div>
+
+      <h2 id="section-settings">Whole-page settings</h2>
+      <p>Besides the blocks, the Product information section itself has settings that affect the whole page. Click the section name (not a block) to reach them. Most are set once at launch and rarely need changing, but here is what the main groups do.</p>
+
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr><th>Group</th><th>What it controls</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Configurator</strong> <span class="pill pill--cfg">Configurator</span></td><td>The heading and description shown above the option builder on build-your-own products, and which collection supplies the gas type choices. See the <a href="configurator.html">Configurator products</a> page.</td></tr>
+            <tr><td><strong>Part Number Lookup</strong></td><td>Connection details for the part-number lookup feature. Set up by your Makro contact; leave as is.</td></tr>
+            <tr><td><strong>Request a Quote API</strong></td><td>Connection details for the quote feature. Set up by your Makro contact; leave as is.</td></tr>
+            <tr><td><strong>Color scheme, Header overlay, Floating bottom bar</strong></td><td>The colour scheme for the page, whether the header sits over the top of the page, and whether a floating bar shows at the bottom on mobile.</td></tr>
+            <tr><td><strong>Media</strong></td><td>How the product photo gallery is laid out: its position on desktop and mobile, the gallery style, and how images fit their frames.</td></tr>
+            <tr><td><strong>Slider options</strong></td><td>If the gallery slides through photos automatically: whether it autoplays, whether hovering pauses it, whether arrows show, and the speed and delay.</td></tr>
+            <tr><td><strong>Section margin</strong></td><td>The blank space above and below the whole section, set separately for desktop and mobile.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--dont"><span class="clabel">Do not</span><p>Please leave the <strong>Part Number Lookup</strong> and <strong>Request a Quote API</strong> details alone. They contain connection settings that link your store to background services. Changing them can stop those features working.</p></div>
+
+      <h2 id="complementary">Complementary products</h2>
+      <p>Below the main product details sits a <strong>Complementary products</strong> section. It shows items that go well with the one being viewed, such as fittings that pair with a hose. You edit it the same way, by clicking the section in the theme editor. Its settings are grouped as follows.</p>
+
+      <h4>Layout and slider</h4>
+      <div class="field"><span class="fname">Columns per row</span><span class="ftype">slider</span><p>How many products sit side by side in a row.</p></div>
+      <div class="field"><span class="fname">Products to show</span><span class="ftype">slider</span><p>The total number of complementary products displayed.</p></div>
+      <div class="field"><span class="fname">Enable autoplay</span><span class="ftype">on / off</span><p>When on, the row slides through items on its own.</p></div>
+      <div class="field"><span class="fname">Disable sliding on hover</span><span class="ftype">on / off</span><p>When on, autoplay pauses while a customer hovers over the row.</p></div>
+      <div class="field"><span class="fname">Show arrows</span><span class="ftype">on / off</span><p>When on, left and right arrows appear so customers can scroll the row by hand.</p></div>
+      <div class="field"><span class="fname">Speed sliding</span><span class="ftype">slider</span><p>How fast the row slides from one item to the next.</p></div>
+      <div class="field"><span class="fname">Delay sliding</span><span class="ftype">slider</span><p>How long the row pauses on each item before moving on.</p></div>
+
+      <h4>Section heading</h4>
+      <div class="field"><span class="fname">Heading</span><span class="ftype">text</span><p>The title above the row, for example "Goes well with".</p></div>
+      <div class="field"><span class="fname">Heading size</span><span class="ftype">choice</span><p>How large that title appears.</p></div>
+      <div class="field"><span class="fname">Subheading</span><span class="ftype">text</span><p>A small line of text above or below the heading.</p></div>
+      <div class="field"><span class="fname">Show subheading dot</span><span class="ftype">on / off</span><p>When on, a small dot marks the subheading.</p></div>
+      <div class="field"><span class="fname">Show border</span><span class="ftype">on / off</span><p>When on, a divider line is shown with the heading.</p></div>
+
+      <h4>Product card</h4>
+      <div class="field"><span class="fname">Image ratio</span><span class="ftype">choice</span><p>The shape of the product photos, for example square or tall.</p></div>
+      <div class="field"><span class="fname">Image fit</span><span class="ftype">choice</span><p>Whether photos fill their frame or fit inside it without cropping.</p></div>
+      <div class="field"><span class="fname">Show collection name</span><span class="ftype">on / off</span><p>When on, each card shows the collection the product belongs to.</p></div>
+      <div class="field"><span class="fname">Show secondary image</span><span class="ftype">on / off</span><p>When on, a second photo appears when a customer hovers over the card.</p></div>
+      <div class="field"><span class="fname">Show SKU</span><span class="ftype">on / off</span><p>When on, each card shows the product's SKU.</p></div>
+      <div class="field"><span class="fname">Show vendor</span><span class="ftype">on / off</span><p>When on, each card shows the brand or vendor.</p></div>
+      <div class="field"><span class="fname">Show description</span><span class="ftype">on / off</span><p>When on, each card shows a short product description.</p></div>
+      <p>The section also has the usual <strong>Section margin</strong> settings for the blank space above and below it on desktop and mobile.</p>
+
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>Which items count as complementary is chosen per product using Shopify's Search &amp; Discovery app, not in the theme editor. The settings here only control how that row looks.</p></div>
+
+      <h2 id="recommended">Recommended products</h2>
+      <p>Further down is a <strong>Recommended products</strong> section. It works just like Complementary products and has the very same settings (layout and slider, section heading, product card, and section margin). The difference is where the items come from: Shopify picks recommendations automatically, based on what customers tend to buy together, rather than you choosing them by hand. Adjust its settings the same way, by clicking the section in the theme editor.</p>
+
+      <h2 id="specifications">Specifications</h2>
+      <p>Many products also show a <strong>Specifications</strong> section, listing technical details in a tidy layout. Its settings are lighter than the others.</p>
+      <div class="field"><span class="fname">Icon Style</span><span class="ftype">choice</span><p>The style of the small icons shown beside each specification.</p></div>
+      <div class="field"><span class="fname">Heading</span><span class="ftype">text</span><p>The title above the specifications, for example "Specifications".</p></div>
+      <div class="field"><span class="fname">Heading size</span><span class="ftype">choice</span><p>How large that title appears.</p></div>
+      <div class="field"><span class="fname">Subheading</span><span class="ftype">text</span><p>A small line of text with the heading.</p></div>
+      <div class="field"><span class="fname">Show subheading dot</span><span class="ftype">on / off</span><p>When on, a small dot marks the subheading.</p></div>
+      <p>It also has the standard <strong>Section margin</strong> settings for spacing on desktop and mobile.</p>
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>The specification content itself (the actual list of details) is set per product under <span class="path"><span class="seg">Products</span></span>. See the <a href="products.html">Products</a> page for how to edit it.</p></div>
+
+      <h2 id="configurator">Configurator products are different</h2>
+      <p>Most products use the plain <strong>Variant picker</strong> block described above: the customer picks from a short menu of ready-made choices. Build-your-own <span class="pill pill--cfg">Configurator</span> products behave differently. Instead of a plain picker, they show an <strong>option builder</strong>: several menus the customer combines step by step to create exactly the item they need, such as a hose built from a gas type, length, and end fittings.</p>
+      <p>This is why the Product information section has a <strong>Configurator</strong> group of settings (its heading, description, and gas type collection). Those settings only affect configurator products, and the option builder replaces the ordinary variant picker on those pages.</p>
+
+      <div class="callout callout--do"><span class="clabel">Do</span><p>Configurator products have their own rules for how the options, prices, and part numbers are built, and they are not edited like ordinary products. For everything about them, please read the dedicated <a href="configurator.html">Configurator products</a> page.</p></div>
+
+      <div class="pager">
+        <a href="page-home.html"><div class="dir">Back</div><div class="ttl">&lsaquo; Homepage</div></a>
+        <a class="next" href="page-collection.html"><div class="dir">Next</div><div class="ttl">Collection pages &rsaquo;</div></a>
+      </div>
+      <div class="foot">WT Farley Store Owner's Guide.</div>
+    </div>
+  </main>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

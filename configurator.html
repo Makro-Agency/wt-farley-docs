@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configurator products | WT Farley Store Owner's Guide</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">WT FARLEY</span>
+      <span class="sub">Store Owner's Guide</span>
+    </div>
+    <button class="menu-btn" type="button">&#9776; Menu</button>
+    <div class="side-title">Start here</div>
+    <ul class="nav">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="getting-started.html">Getting around Shopify</a></li>
+    </ul>
+    <div class="side-title">Editing your store</div>
+    <ul class="nav">
+      <li><a href="products.html">Products</a></li>
+      <li><a href="configurator.html" class="active">Configurator products</a></li>
+      <li><a href="pages-navigation.html">Pages &amp; navigation</a></li>
+      <li><a href="store-features.html">Store features</a></li>
+    </ul>
+    <div class="side-title">Editing each page</div>
+    <ul class="nav">
+      <li><a href="theme-editor.html">The theme editor</a></li>
+      <li><a href="page-home.html">Homepage</a></li>
+      <li><a href="page-product.html">Product page</a></li>
+      <li><a href="page-collection.html">Collection pages</a></li>
+      <li><a href="page-cart-search.html">Cart &amp; search</a></li>
+      <li><a href="page-content.html">Content pages</a></li>
+      <li><a href="page-header-footer.html">Header, menu &amp; footer</a></li>
+    </ul>
+    <div class="side-title">Feature deep-dives</div>
+    <ul class="nav">
+      <li><a href="feature-custom.html">Custom features</a></li>
+      <li><a href="feature-widgets.html">Marketing widgets</a></li>
+    </ul>
+    <div class="side-title">Reference</div>
+    <ul class="nav">
+      <li><a href="section-catalog.html">Section catalog</a></li>
+      <li><a href="glossary.html">Glossary &amp; FAQ</a></li>
+    </ul>
+    <div class="side-foot">Your medical gas equipment store, built on Shopify Plus.<br><br>Prepared by Makro Agency.</div>
+  </aside>
+
+  <main class="content">
+    <section class="hero"><div class="wrap">
+      <p class="eyebrow">Editing your store</p>
+      <h1>Configurator products</h1>
+      <p>Your "build your own" products: how they work, how to safely change options and prices,
+      and how to build a new one. This is the most powerful part of your store, so it is worth
+      reading this page fully before you change anything.</p>
+    </div></section>
+
+    <div class="wrap">
+      <div class="lede-block">
+        A configurator product lets a customer build a made-to-order item, such as an oxygen hose,
+        by choosing from several option menus. The price and the part number update as they choose.
+        Your store has 40 of these products, all driven by a shared library of reusable option menus.
+      </div>
+
+      <div class="toc">
+        <h4>On this page</h4>
+        <ol>
+          <li><a href="#what">What a configurator product is</a></li>
+          <li><a href="#shared">The one thing to understand first: menus are shared</a></li>
+          <li><a href="#anatomy">How a configurator product is put together</a></li>
+          <li><a href="#finding">Finding the products and the option menus</a></li>
+          <li><a href="#group">Inside an option group</a></li>
+          <li><a href="#choice">Inside an option choice</a></li>
+          <li><a href="#edits">Common edits, step by step</a></li>
+          <li><a href="#part-number">How the part number is built</a></li>
+          <li><a href="#price-map">The price map, and why prices need a refresh</a></li>
+          <li><a href="#images">The layered product image</a></li>
+          <li><a href="#gas">The gas-type switcher</a></li>
+          <li><a href="#new-build">Building a brand-new configurator product</a></li>
+        </ol>
+      </div>
+
+      <h2 id="what">What a configurator product is</h2>
+      <p>Most products in your store are fixed: one item, one price. A configurator product is different.
+      It starts from a <strong>base price</strong> and then offers the customer a set of option menus, for
+      example hose length, end fittings, and colour. Each choice can add to the price and adds a code to a
+      <strong>part number</strong> that describes exactly what was built. When the customer adds it to the
+      cart, they are ordering that specific configuration.</p>
+      <p>A good example is the <strong>Oxygen Hose</strong> product. Its base price is $16.00, and it offers
+      six option menus. As the shopper chooses a length and fittings, the price and the picture update, and a
+      part number such as <code>OH-120CD01</code> is assembled behind the scenes.</p>
+
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>Configurator products are also called <em>composite</em> products, because the final item is
+        composed from several choices. In the product list they carry the tags <code>configurable</code> and
+        <code>composite</code>, and a setting called <code>is_configurable</code> is switched on.</p>
+      </div>
+
+      <h2 id="shared">The one thing to understand first: menus are shared</h2>
+      <p>This is the single most important idea on this page. The option menus are <strong>not</strong> stored
+      inside each product. They are stored once, in a shared library, and many products point at the same menus.
+      In Shopify this kind of shared, reusable content is called a <strong>metaobject</strong>.</p>
+      <p>Your library contains:</p>
+      <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Building block</th><th>What it is</th><th>How many you have</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Option Group</strong></td><td>One menu of choices, for example "Hose Length"</td><td>179</td></tr>
+          <tr><td><strong>Option Choice</strong></td><td>One selectable option inside a group, for example "10 Feet"</td><td>1,574</td></tr>
+        </tbody>
+      </table>
+      </div>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>Because these menus are shared, editing one choice can change <strong>every product that uses it</strong>.
+        If you rename or reprice a choice in a group that several hoses share, all of those hoses change at once.
+        This is usually what you want, but always pause and ask: "which products use this menu?" before editing.</p>
+      </div>
+      <div class="callout callout--dont">
+        <span class="clabel">Do not</span>
+        <p>Never <strong>delete</strong> an option group or option choice unless you are certain no product uses it.
+        Deleting a shared choice removes it from every product at once and cannot be undone. To take a choice out of
+        circulation safely, hide it instead (explained below).</p>
+      </div>
+
+      <h2 id="anatomy">How a configurator product is put together</h2>
+      <p>Each configurator product is a normal Shopify product with some extra fields that turn it into a builder.
+      Here are the pieces, using the Oxygen Hose as the example.</p>
+
+      <div class="field"><span class="fname">The product and its base price</span><span class="ftype">product</span>
+      <p>The product has a single variant that holds the starting price. On the Oxygen Hose that variant is
+      <code>OH-BASE</code> at $16.00. Every option the customer adds is added on top of this base.</p></div>
+
+      <div class="field"><span class="fname">custom.is_configurable</span><span class="ftype">true / false</span>
+      <p>The switch that tells the store to show the builder instead of a normal buy button. On configurator
+      products this is set to <code>true</code>.</p></div>
+
+      <div class="field"><span class="fname">custom.sku_prefix</span><span class="ftype">text</span>
+      <p>The starting code for the built part number. On the Oxygen Hose it is <code>OH-</code>. The chosen option
+      codes are added after this prefix.</p></div>
+
+      <div class="field"><span class="fname">custom.option_groups</span><span class="ftype">list of option groups</span>
+      <p>The ordered list of option menus this product shows. The Oxygen Hose points at six option groups. Changing
+      this list changes which menus appear on the product, and in what order.</p></div>
+
+      <div class="field"><span class="fname">custom.cfg_price_map</span><span class="ftype">pricing table</span>
+      <p>A behind-the-scenes table the product page uses to total the build instantly as the customer clicks. It
+      mirrors the prices held on the choices. See <a href="#price-map">The price map</a> below, because this is the
+      one thing that needs care when you change prices.</p></div>
+
+      <div class="field"><span class="fname">custom.gas_group</span><span class="ftype">list of products</span>
+      <p>The related products offered by the gas-type switcher on the page. See <a href="#gas">The gas-type switcher</a>.</p></div>
+
+      <div class="field"><span class="fname">custom.cfg_stack_base</span><span class="ftype">image</span>
+      <p>The base picture that the option image layers sit on top of. See <a href="#images">The layered product image</a>.</p></div>
+
+      <h2 id="finding">Finding the products and the option menus</h2>
+      <h3>Find a configurator product</h3>
+      <ol class="steps">
+        <li><strong>Open your products.</strong> Go to
+          <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">All products</span></span></li>
+        <li><strong>Search by name.</strong> Type the product name, for example "Oxygen Hose", and click it to open it.</li>
+        <li><strong>Scroll to the extra fields.</strong> The configurator settings (<code>option_groups</code>,
+          <code>sku_prefix</code>, and so on) appear in the Metafields area lower down the product page.</li>
+      </ol>
+
+      <h3>Find the shared option menus</h3>
+      <ol class="steps">
+        <li><strong>Open Metaobjects.</strong> Go to
+          <span class="path"><span class="seg">Content</span><span class="sep">&rsaquo;</span><span class="seg">Metaobjects</span></span></li>
+        <li><strong>Choose the type.</strong> Click <strong>Option Group</strong> to see all 179 menus, or
+          <strong>Option Choice</strong> to see all 1,574 individual options.</li>
+        <li><strong>Open one to edit it.</strong> Use the search box to find a group by name, for example "Hose Length",
+          and click it to open its fields.</li>
+      </ol>
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>You can edit an option menu either from the Metaobjects area, or directly from within a product where it is
+        used. Both open the same shared menu, so a change made in one place shows everywhere that menu is used.</p>
+      </div>
+
+      <h2 id="group">Inside an option group</h2>
+      <p>An option group is one menu, such as "Hose Length". When you open a group you will see these fields.</p>
+      <div class="field"><span class="fname">display_name</span><span class="ftype">text</span>
+      <p>The heading the customer sees above the menu, for example <em>Hose Length</em>. Safe to reword, but remember it
+      may appear on several products.</p></div>
+      <div class="field"><span class="fname">ui_type</span><span class="ftype">text</span>
+      <p>How the menu is shown, for example <code>simple-dropdown</code>. Leave this unless your developer advises a change.</p></div>
+      <div class="field"><span class="fname">is_required</span><span class="ftype">true / false</span>
+      <p>Whether the customer must make a choice from this menu before adding to cart.</p></div>
+      <div class="field"><span class="fname">part_number_position</span><span class="ftype">number</span>
+      <p>Where this group's code sits in the assembled part number. Position 1 comes first, then 2, and so on. See
+      <a href="#part-number">How the part number is built</a>.</p></div>
+      <div class="field"><span class="fname">part_number_padding</span><span class="ftype">number</span>
+      <p>Pads a group's codes to a fixed length. On Hose Length the padding is 3, so the code for 36 inches is written
+      as <code>036</code>.</p></div>
+      <div class="field"><span class="fname">default_choice</span><span class="ftype">one option choice</span>
+      <p>The choice that is pre-selected when the product first loads.</p></div>
+      <div class="field"><span class="fname">choices</span><span class="ftype">list of option choices</span>
+      <p>The options in this menu, in order. This is where you add, remove, or reorder the choices shown.</p></div>
+      <div class="field"><span class="fname">layer_z</span><span class="ftype">number</span>
+      <p>The stacking order of this group's image layer in the product picture. See <a href="#images">The layered product image</a>.</p></div>
+
+      <h2 id="choice">Inside an option choice</h2>
+      <p>An option choice is a single selectable option, such as "120 Inches (10 Feet)". When you open a choice you will
+      see these fields. The example values are from that real choice.</p>
+      <div class="field"><span class="fname">display_name</span><span class="ftype">text</span>
+      <p>The label the customer reads, for example <em>120 Inches (10 Feet)</em>.</p></div>
+      <div class="field"><span class="fname">part_code</span><span class="ftype">text</span>
+      <p>The short code this choice adds to the part number, for example <code>120</code>.</p></div>
+      <div class="field"><span class="fname">base_price_delta</span><span class="ftype">money</span>
+      <p>The amount this choice adds to (or, if negative, subtracts from) the base price. For the 10 foot length it is
+      <code>$34.00</code>. This is the source of truth for the choice's price.</p></div>
+      <div class="field"><span class="fname">sort_order</span><span class="ftype">number</span>
+      <p>Where the choice appears in the menu. Lower numbers appear first.</p></div>
+      <div class="field"><span class="fname">is_hidden</span><span class="ftype">true / false</span>
+      <p>Set to <code>true</code> to hide a choice from customers without deleting it. This is the safe way to retire an option.</p></div>
+      <div class="field"><span class="fname">belongs_to_group</span><span class="ftype">one option group</span>
+      <p>Which menu this choice belongs to. Leave this as set.</p></div>
+      <div class="field"><span class="fname">layer_image</span><span class="ftype">image</span>
+      <p>The picture layer shown for this choice on products that use layered images. See <a href="#images">The layered product image</a>.</p></div>
+
+      <h2 id="edits">Common edits, step by step</h2>
+
+      <h3>Rename a choice or a menu heading</h3>
+      <ol class="steps">
+        <li><strong>Open the item.</strong> Find the option choice (or option group) in
+          <span class="path"><span class="seg">Content</span><span class="sep">&rsaquo;</span><span class="seg">Metaobjects</span></span></li>
+        <li><strong>Edit the wording.</strong> Change the <code>display_name</code> field.</li>
+        <li><strong>Save.</strong> The new wording shows on every product that uses it.</li>
+      </ol>
+      <div class="callout callout--do">
+        <span class="clabel">Do</span>
+        <p>Renaming for clarity or to fix a typo is safe. It changes only the label, not the price or the part number.</p>
+      </div>
+
+      <h3>Hide a choice you no longer offer</h3>
+      <ol class="steps">
+        <li><strong>Open the option choice</strong> in the Metaobjects area.</li>
+        <li><strong>Set is_hidden to true.</strong> Tick or switch on the <code>is_hidden</code> field.</li>
+        <li><strong>Save.</strong> The choice disappears from the storefront but its record and any past orders are kept.</li>
+      </ol>
+      <div class="callout callout--tip">
+        <span class="clabel">Good to know</span>
+        <p>Always prefer hiding over deleting. Hidden choices can be brought back at any time, and they do not disturb
+        the other choices in the menu.</p>
+      </div>
+
+      <h3>Change which choice is selected by default</h3>
+      <ol class="steps">
+        <li><strong>Open the option group</strong> (the menu), not the choice.</li>
+        <li><strong>Set default_choice.</strong> Pick the choice you want pre-selected in the <code>default_choice</code> field.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <h3>Reorder the choices in a menu</h3>
+      <ol class="steps">
+        <li><strong>Open each choice</strong> you want to move.</li>
+        <li><strong>Adjust sort_order.</strong> Lower numbers appear higher in the list. Space your numbers out (10, 20, 30) so you can slot items in later.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <h3>Change the price of a choice</h3>
+      <ol class="steps">
+        <li><strong>Open the option choice</strong> in the Metaobjects area.</li>
+        <li><strong>Edit base_price_delta.</strong> Enter the new amount this choice adds to the base price.</li>
+        <li><strong>Save.</strong></li>
+        <li><strong>Ask for a price refresh.</strong> Have your developer regenerate the price map on the affected products (explained next), so the live total matches the new price.</li>
+      </ol>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>A choice's price is stored in two places: on the choice itself (<code>base_price_delta</code>) and in each
+        product's fast pricing table (<code>cfg_price_map</code>). If you change one without the other, the page can show a
+        different total from what you intended. Always pair a price change with a price-map refresh. See below.</p>
+      </div>
+
+      <h3>Add a new choice to a menu</h3>
+      <ol class="steps">
+        <li><strong>Create the choice.</strong> Go to
+          <span class="path"><span class="seg">Content</span><span class="sep">&rsaquo;</span><span class="seg">Metaobjects</span><span class="sep">&rsaquo;</span><span class="seg">Option Choice</span></span>
+          and click <strong>Add entry</strong>.</li>
+        <li><strong>Fill the fields.</strong> Set <code>display_name</code>, <code>part_code</code>, <code>base_price_delta</code>,
+          <code>sort_order</code>, and set <code>belongs_to_group</code> to the correct menu.</li>
+        <li><strong>Add it to the menu.</strong> Open the option group and add the new choice to its <code>choices</code> list.</li>
+        <li><strong>Save, then request a price-map refresh</strong> for the products that use this menu.</li>
+      </ol>
+
+      <h3>Change which menus appear on a product</h3>
+      <ol class="steps">
+        <li><strong>Open the product</strong> in
+          <span class="path"><span class="seg">Products</span></span> and scroll to its Metafields.</li>
+        <li><strong>Edit option_groups.</strong> Add or remove option groups from the <code>custom.option_groups</code> list,
+          and drag them into the order you want them shown.</li>
+        <li><strong>Save, then request a price-map refresh</strong> for that product.</li>
+      </ol>
+
+      <h2 id="part-number">How the part number is built</h2>
+      <p>When a customer finishes a build, the store assembles a part number so your team knows exactly what was ordered.
+      The recipe is:</p>
+      <div class="callout callout--tip">
+        <span class="clabel">The recipe</span>
+        <p><code>sku_prefix</code> first, then each menu's chosen <code>part_code</code> added in <code>part_number_position</code>
+        order (1, then 2, then 3), with each code padded to the length set by <code>part_number_padding</code>.</p>
+      </div>
+      <p>For example, on the Oxygen Hose (<code>sku_prefix</code> = <code>OH-</code>), choosing the 10 foot length (position 1,
+      code <code>120</code>) followed by the codes from the other menus produces a part number that begins
+      <code>OH-120...</code> and continues with each further choice.</p>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>Part codes and positions must be correct, or the assembled part number will be wrong on the order. When you add
+        a choice, double check its <code>part_code</code>, and avoid starting a code with a symbol such as a plus or minus
+        sign, because that can be misread. If in doubt, copy the pattern of an existing choice in the same menu.</p>
+      </div>
+
+      <h2 id="price-map">The price map, and why prices need a refresh</h2>
+      <p>To make the total update the instant a customer clicks, each configurator product carries a small pricing table
+      called <code>custom.cfg_price_map</code>. It lists the base price and every choice's price, so the page never has to
+      pause and calculate. It is a copy of the choice prices, kept for speed.</p>
+      <div class="callout callout--dont">
+        <span class="clabel">Do not</span>
+        <p>Do not hand-edit the <code>cfg_price_map</code> field. It is generated automatically and holds prices in a coded
+        format. Editing it by hand can make the displayed total wrong.</p>
+      </div>
+      <div class="callout callout--do">
+        <span class="clabel">Do</span>
+        <p>When you change any choice price, edit the choice's <code>base_price_delta</code> (the source of truth), then ask
+        your developer to regenerate the price map for the affected products. This keeps the shown total and the real price
+        in step.</p>
+      </div>
+
+      <h2 id="images">The layered product image</h2>
+      <p>On configurator products, the picture is built by stacking transparent image layers, so it can reflect the chosen
+      options. There is a <strong>base image</strong> (<code>custom.cfg_stack_base</code>), and each option group has a
+      <strong>layer order</strong> (<code>layer_z</code>) that decides which layers sit on top. A choice can carry its own
+      <strong>layer image</strong> (<code>layer_image</code>) that appears when it is selected.</p>
+      <ol class="steps">
+        <li><strong>To replace an image layer,</strong> open the option choice (for a per-choice layer) or the product (for the
+          base image) and swap the image field.</li>
+        <li><strong>Match the size and alignment.</strong> The new image must be the same dimensions and positioned the same way
+          as the one it replaces, so the layers line up.</li>
+        <li><strong>Save and preview</strong> the product on the storefront to confirm the stack still lines up.</li>
+      </ol>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>The layers are prepared as matching, full-size images that align pixel for pixel. A new image that is a different
+        size or crop will look misaligned. For new layer artwork, work with your designer or developer so the alignment is kept.</p>
+      </div>
+
+      <h2 id="gas">The gas-type switcher</h2>
+      <p>Many hose and regulator products let a shopper switch the gas type (for example Oxygen, Air, Vacuum, Nitrogen,
+      Nitrous Oxide, or CO2) right on the product page and jump to the matching product. This is powered by
+      <code>custom.gas_group</code>, a list on each product naming its sibling products.</p>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>For the switcher to work both ways, every product in a gas family should list all the others. If you add a new gas
+        variation, ask your developer to update the whole family so each product points to the others. This feature is also
+        covered on the <a href="store-features.html">Store features</a> page.</p>
+      </div>
+
+      <h2 id="new-build">Building a brand-new configurator product</h2>
+      <p>This is the most advanced task in your store. You can do it yourself once you are comfortable with the pieces above,
+      but for a first build it is best done alongside your developer.</p>
+      <div class="callout callout--warn">
+        <span class="clabel">Take care</span>
+        <p>A configurator product only works correctly when the product settings, the option menus, the part number codes, and
+        the price map all agree. The final two steps below (the price map, and testing) are where a developer's help matters most.</p>
+      </div>
+      <ol class="steps">
+        <li><strong>Create the product.</strong> In
+          <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">Add product</span></span>
+          add the title, description, and photos, and set the single variant's price to the base price. Keep it
+          <span class="pill pill--draft">Draft</span> while you build.</li>
+        <li><strong>Turn it into a configurator.</strong> In the Metafields, set <code>custom.is_configurable</code> to true and
+          set <code>custom.sku_prefix</code> to the product's starting code.</li>
+        <li><strong>Choose its option menus.</strong> Reuse existing option groups where you can, or create new ones with their
+          choices, then list them in <code>custom.option_groups</code> in the order they should appear.</li>
+        <li><strong>Check codes and positions.</strong> Make sure each group has the right <code>part_number_position</code> and
+          each choice has the right <code>part_code</code>.</li>
+        <li><strong>Generate the price map.</strong> Have your developer create <code>custom.cfg_price_map</code> for the product so
+          totals update live.</li>
+        <li><strong>Set up images</strong> if the product uses layered pictures (base image plus layer images).</li>
+        <li><strong>Preview and test.</strong> View the product on the storefront, run through the options, and confirm the price,
+          the picture, and the part number all look right.</li>
+        <li><strong>Go live.</strong> When everything checks out, set the product to <span class="pill pill--active">Active</span>.</li>
+      </ol>
+
+      <hr>
+      <div class="callout callout--dont">
+        <span class="clabel">Remember</span>
+        <p>The option menus are shared, prices live in two places that must stay in step, and part numbers depend on exact codes.
+        When in doubt on a configurator product, duplicate to a draft to practise, or ask your developer. Everyday jobs like
+        renaming, hiding a choice, or changing a default are safe to do yourself.</p>
+      </div>
+
+      <div class="pager">
+        <a href="products.html"><div class="dir">Back</div><div class="ttl">&lsaquo; Products</div></a>
+        <a class="next" href="pages-navigation.html"><div class="dir">Next</div><div class="ttl">Pages &amp; navigation &rsaquo;</div></a>
+      </div>
+      <div class="foot">WT Farley Store Owner's Guide.</div>
+    </div>
+  </main>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

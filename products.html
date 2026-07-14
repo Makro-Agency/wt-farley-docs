@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | WT Farley Store Owner's Guide</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="brand">
+      <span class="mark">WT FARLEY</span>
+      <span class="sub">Store Owner's Guide</span>
+    </div>
+    <button class="menu-btn" type="button">&#9776; Menu</button>
+    <div class="side-title">Start here</div>
+    <ul class="nav">
+      <li><a href="index.html">Welcome</a></li>
+      <li><a href="getting-started.html">Getting around Shopify</a></li>
+    </ul>
+    <div class="side-title">Editing your store</div>
+    <ul class="nav">
+      <li><a href="products.html" class="active">Products</a></li>
+      <li><a href="configurator.html">Configurator products</a></li>
+      <li><a href="pages-navigation.html">Pages &amp; navigation</a></li>
+      <li><a href="store-features.html">Store features</a></li>
+    </ul>
+    <div class="side-title">Editing each page</div>
+    <ul class="nav">
+      <li><a href="theme-editor.html">The theme editor</a></li>
+      <li><a href="page-home.html">Homepage</a></li>
+      <li><a href="page-product.html">Product page</a></li>
+      <li><a href="page-collection.html">Collection pages</a></li>
+      <li><a href="page-cart-search.html">Cart &amp; search</a></li>
+      <li><a href="page-content.html">Content pages</a></li>
+      <li><a href="page-header-footer.html">Header, menu &amp; footer</a></li>
+    </ul>
+    <div class="side-title">Feature deep-dives</div>
+    <ul class="nav">
+      <li><a href="feature-custom.html">Custom features</a></li>
+      <li><a href="feature-widgets.html">Marketing widgets</a></li>
+    </ul>
+    <div class="side-title">Reference</div>
+    <ul class="nav">
+      <li><a href="section-catalog.html">Section catalog</a></li>
+      <li><a href="glossary.html">Glossary &amp; FAQ</a></li>
+    </ul>
+    <div class="side-foot">Your medical gas equipment store, built on Shopify Plus.<br><br>Prepared by Makro Agency.</div>
+  </aside>
+  <main class="content">
+    <section class="hero"><div class="wrap">
+      <p class="eyebrow">Editing your store</p>
+      <h1>Products</h1>
+      <p>How to edit your everyday products: prices, photos, stock, descriptions, categories, and whether a product is visible. Build-your-own configurator products have their own section.</p>
+    </div></section>
+    <div class="wrap">
+
+      <div class="lede-block">
+        <p>Your products are the heart of your store. This page walks you through everything you will do day to day: changing a price, swapping a photo, updating a description, marking something out of stock, and adding brand new items. You do not need any technical knowledge. Take your time, follow the numbered steps, and remember that nothing goes live to customers until you press <strong>Save</strong>.</p>
+        <p>Every product lives in the same place in your admin. To get there, look at the left-hand menu and follow the path shown throughout this guide.</p>
+      </div>
+
+      <div class="toc">
+        <h4>On this page</h4>
+        <ol>
+          <li><a href="#three-types">The three kinds of product</a></li>
+          <li><a href="#finding">Finding a product</a></li>
+          <li><a href="#simple">Editing a simple product</a></li>
+          <li><a href="#metafields">The extra fields (metafields)</a></li>
+          <li><a href="#variants">Variant products</a></li>
+          <li><a href="#swatches">Products with colour or style swatches</a></li>
+          <li><a href="#adding">Adding a new product</a></li>
+          <li><a href="#duplicate">Duplicating and deleting</a></li>
+        </ol>
+      </div>
+
+      <h2 id="three-types">The three kinds of product</h2>
+      <p>Before you edit anything, it helps to know that your store has three kinds of product. They all live in the same list, but they behave a little differently. Knowing which kind you are looking at tells you what you can safely change.</p>
+
+      <div class="tbl-wrap">
+        <table>
+          <thead>
+            <tr><th>Type</th><th>What it is</th><th>Example</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Simple product</strong></td>
+              <td>One item, one price, one SKU. The most common kind, and the easiest to edit.</td>
+              <td>Hose Splicer (SKU MF-7041, $12.00)</td>
+            </tr>
+            <tr>
+              <td><strong>Variant product</strong></td>
+              <td>One product with a few choices, where each choice has its own price and SKU.</td>
+              <td>Core SP Cart with White Drawers, with the option "Add Drawer Organizers to your Cart"</td>
+            </tr>
+            <tr>
+              <td><strong>Configurator product</strong> <span class="pill pill--cfg">Configurator</span></td>
+              <td>A build-your-own product with many option menus that customers combine to create exactly what they need.</td>
+              <td>Oxygen Hose</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>Configurator products work very differently from the other two, and they have their own set of rules. This page covers simple and variant products. For anything marked with the <span class="pill pill--cfg">Configurator</span> pill, please head to the <a href="configurator.html">Configurator products</a> page instead.</p></div>
+
+      <h2 id="finding">Finding a product</h2>
+      <p>Whenever you want to edit something, the first step is always the same: find the product and open it.</p>
+
+      <ol class="steps">
+        <li><strong>Open your product list.</strong> In the left-hand menu, go to <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">All products</span></span>. You will see every product in your store, listed row by row.</li>
+        <li><strong>Search by name or SKU.</strong> Use the search box at the top of the list. Type part of the product name (for example "hose") or the SKU, and the list narrows down as you type.</li>
+        <li><strong>Filter to narrow the list.</strong> You can filter the list by status (for example, show only Active or only Draft products) or by product type. This is handy when you have a lot of products.</li>
+        <li><strong>Open the product.</strong> Click the product name to open its editor. This is where all the changes happen.</li>
+      </ol>
+
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>The product list shows a few columns at a glance: a small thumbnail photo, the product name, its status (Active or Draft), the inventory count, the product type, and the vendor. If a column looks blank, it simply means that detail has not been filled in for that product yet.</p></div>
+
+      <h2 id="simple">Editing a simple product</h2>
+      <p>This is the part you will use most often. When you open a simple product, the editor is divided into clearly labelled sections. You do not have to touch every section every time. Change only what you need, then Save. Here is what each section does.</p>
+
+      <h3>Title and description</h3>
+      <p>The <strong>Title</strong> is the product name customers see. The <strong>Description</strong> is the main text on the product page. The description uses a rich text editor, which works like a simple word processor: you can make text <strong>bold</strong>, add links, and create bulleted lists using the little toolbar above the box. Write in plain, friendly language that helps a customer understand the product.</p>
+
+      <h3>Media (photos)</h3>
+      <p>The <strong>Media</strong> section holds your product photos. To add a photo, click the upload area and choose an image from your computer, or drag the file straight onto it. To change the order, drag a photo into a new position. To remove one, select it and delete it. The <strong>first</strong> image is the main photo that shows on listings and at the top of the product page, so make sure your best image sits first.</p>
+
+      <h3>Pricing</h3>
+      <p>The <strong>Pricing</strong> section has three fields worth knowing:</p>
+      <ul>
+        <li><strong>Price:</strong> the amount the customer pays.</li>
+        <li><strong>Compare-at price:</strong> an optional original price. When you set it higher than the price, the store shows the original with a line through it, so customers can see the saving.</li>
+        <li><strong>Cost per item:</strong> what the product costs you. This is private, is never shown to customers, and simply helps you track profit.</li>
+      </ul>
+
+      <h3>Inventory</h3>
+      <p>The <strong>Inventory</strong> section is where you record stock:</p>
+      <ul>
+        <li><strong>SKU:</strong> your internal code for the product, for example MF-7041.</li>
+        <li><strong>Track quantity:</strong> a switch that tells Shopify to count stock for you.</li>
+        <li><strong>Quantity on hand:</strong> how many you have.</li>
+      </ul>
+      <div class="callout callout--warn"><span class="clabel">Take care</span><p>When "Track quantity" is switched on and the quantity reaches 0, the product can show as sold out and customers may not be able to buy it. If a product should always be available, either keep the quantity topped up or leave tracking off for that item.</p></div>
+
+      <h3>Status</h3>
+      <p>A product's status decides whether customers can see it. <span class="pill pill--active">Active</span> means it is live and visible in your store. <span class="pill pill--draft">Draft</span> means it is hidden while you work on it. Set a product to Draft while you prepare it, then switch it to Active when it is ready to sell.</p>
+
+      <h3>Product organization</h3>
+      <p>The <strong>Product organization</strong> section is more important than it looks, because it controls where your product appears on the site.</p>
+      <ul>
+        <li><strong>Product type:</strong> a simple category label, such as "Hose".</li>
+        <li><strong>Vendor:</strong> the brand. For your store this is usually WT Farley.</li>
+        <li><strong>Tags:</strong> short keywords attached to the product.</li>
+        <li><strong>Collections:</strong> groups the product belongs to.</li>
+      </ul>
+      <div class="callout callout--do"><span class="clabel">Do</span><p><strong>Tags are what place a product into your category pages automatically.</strong> When you add the right tag, the product shows up on the matching category page on its own. So whenever you add or edit a product, make sure it has the correct tags. To see how tags map to category pages, read the <a href="pages-navigation.html">Pages &amp; navigation</a> page.</p></div>
+
+      <h3>Search engine listing (SEO)</h3>
+      <p>Near the bottom of the editor is a section called <strong>Search engine listing</strong>. This controls the title and short description that appear when your product shows up in a Google search. You can leave it as is, and Shopify will use your product title and description automatically. If you want to fine-tune how a product reads in search results, edit the page title and description here.</p>
+
+      <h3>And always: Save</h3>
+      <p>No change takes effect until you press <strong>Save</strong>. Get into the habit of saving before you leave a page. If you navigate away without saving, Shopify will usually warn you.</p>
+
+      <h4>Worked example: change a price</h4>
+      <ol class="steps">
+        <li><strong>Open the product.</strong> Go to <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">All products</span></span>, search for the product, and click its name.</li>
+        <li><strong>Find the Pricing section.</strong> Scroll to <strong>Pricing</strong>.</li>
+        <li><strong>Type the new price.</strong> Click the <strong>Price</strong> field, clear the old amount, and enter the new one.</li>
+        <li><strong>Save.</strong> Press <strong>Save</strong>. The new price is live straight away.</li>
+      </ol>
+
+      <h4>Worked example: swap the main photo</h4>
+      <ol class="steps">
+        <li><strong>Open the product</strong> from <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">All products</span></span>.</li>
+        <li><strong>Go to the Media section.</strong></li>
+        <li><strong>Add the new photo.</strong> Upload it or drag it into the Media area.</li>
+        <li><strong>Make it first.</strong> Drag the new photo to the front of the row so it becomes the main image.</li>
+        <li><strong>Tidy up.</strong> If you no longer need the old photo, select it and delete it.</li>
+        <li><strong>Save.</strong> Press <strong>Save</strong>.</li>
+      </ol>
+
+      <h2 id="metafields">The extra fields (metafields)</h2>
+      <p>Below the standard fields, each product has some extra custom fields that were set up specially for your store. They are sometimes called metafields. They power things like the wholesale price, the Specifications area, and downloadable spec sheets. The ones below are safe for you to edit.</p>
+
+      <div class="field"><span class="fname">custom.wtfarley_b2b_price</span><span class="ftype">money</span><p>The wholesale price shown to approved B2B (business) customers. Safe to edit. Enter the amount just like a normal price.</p></div>
+      <div class="field"><span class="fname">custom.specification_content</span><span class="ftype">rich text</span><p>The Specifications shown on the product page. Safe to edit. Use the rich text tools to add headings, lists, and bold text.</p></div>
+      <div class="field"><span class="fname">custom.documents</span><span class="ftype">files</span><p>Spec sheets and manuals offered for download on the product page. Safe to edit. Upload or remove files here.</p></div>
+      <div class="field"><span class="fname">custom.card_description</span><span class="ftype">text</span><p>The short line shown on the product card in listings. Safe to edit. Keep it brief and clear.</p></div>
+      <div class="field"><span class="fname">custom.mri_conditional</span><span class="ftype">true/false</span><p>Marks a product as MRI safe. Safe to edit. Set it to true when the product is MRI safe.</p></div>
+      <div class="field"><span class="fname">custom.gas_type</span><span class="ftype">text</span><p>The gas the product is for, such as Oxygen or Air. Safe to edit.</p></div>
+      <div class="field"><span class="fname">custom.max_order_qty</span><span class="ftype">number</span><p>An optional cap on how many of this item a customer can order at once. Safe to edit. Leave it blank for no cap.</p></div>
+
+      <div class="callout callout--dont"><span class="clabel">Do not</span><p>On normal products, please leave these fields alone. They belong to configurator products or are reference values from your old website, and changing them can break how a product behaves: <strong>custom.is_configurable</strong>, <strong>custom.sku_prefix</strong>, <strong>custom.option_groups</strong>, <strong>custom.excluded_choices</strong>, anything starting with <strong>custom.cfg_</strong>, and <strong>custom.s4s_catalog_id</strong> and <strong>custom.s4s_created_at</strong>.</p></div>
+
+      <h2 id="variants">Variant products</h2>
+      <p>A variant product is one product that offers a few choices, where each choice is its own sellable item with its own price and SKU. A good example is the <strong>Core SP Cart with White Drawers</strong>. It has the option "Add Drawer Organizers to your Cart", with choices such as Cart Only at $1,286 and four organizer add-ons at $1,333 each. When you open the product, you will see each of these listed as a variant.</p>
+
+      <p><strong>To edit the price or SKU of one variant:</strong></p>
+      <ol class="steps">
+        <li><strong>Open the product</strong> from <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">All products</span></span>.</li>
+        <li><strong>Find the Variants section</strong> and click the variant you want to change.</li>
+        <li><strong>Update the price or SKU</strong> in the fields shown for that variant.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <p><strong>To add a new choice (option value):</strong></p>
+      <ol class="steps">
+        <li><strong>Open the product</strong> and go to the <strong>Variants</strong> (options) section.</li>
+        <li><strong>Add a new value</strong> to the existing option, for example a new organizer choice.</li>
+        <li><strong>Set its price and SKU</strong> so the new choice is ready to sell.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <p><strong>To assign a specific photo to a variant:</strong></p>
+      <ol class="steps">
+        <li><strong>Add the photo</strong> to the product's Media section first.</li>
+        <li><strong>Open the variant</strong> and choose the image you want linked to it.</li>
+        <li><strong>Save.</strong> That photo now shows when a customer selects that choice.</li>
+      </ol>
+
+      <div class="callout callout--warn"><span class="clabel">Take care</span><p>Each variant is a real item a customer can buy, so keep every variant's price and SKU correct. A blank or wrong price on one variant means customers may pay the wrong amount for that choice.</p></div>
+
+      <h2 id="swatches">Products with colour or style swatches</h2>
+      <p>Some products show clickable swatches for their choices instead of a plain drop-down menu. These little colour or style buttons are powered by a "Color" setting on the product's options. To change which choices appear, edit the product's options and variants exactly as described above. The look of the swatches themselves is handled by the theme, so you do not need to adjust any design settings. Add or remove the choice, and the swatch follows.</p>
+
+      <h2 id="adding">Adding a new product</h2>
+      <p>When you have a brand new item to sell, you build it from scratch. Here is the full process.</p>
+
+      <ol class="steps">
+        <li><strong>Start a new product.</strong> Go to <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">Add product</span></span>.</li>
+        <li><strong>Add the title and description.</strong> Give it a clear name and write the product description.</li>
+        <li><strong>Add media.</strong> Upload your photos, and make sure the best one sits first.</li>
+        <li><strong>Set the price.</strong> Enter the Price, and a Compare-at price if you want to show a saving.</li>
+        <li><strong>Set up inventory.</strong> Add the SKU, and switch on Track quantity with a starting quantity if you want Shopify to count stock.</li>
+        <li><strong>Fill in organization and tags.</strong> Set the product type and vendor, and add the correct tags so the product lands on the right category pages.</li>
+        <li><strong>Choose the status.</strong> Set it to <span class="pill pill--draft">Draft</span> while you finish, or <span class="pill pill--active">Active</span> to make it live.</li>
+        <li><strong>Save.</strong></li>
+      </ol>
+
+      <div class="callout callout--tip"><span class="clabel">Good to know</span><p>To match an existing product's setup, it is often quicker to use <strong>Duplicate</strong> than to start from a blank product. You get all the same fields and tags, ready to adjust. See the next section for how.</p></div>
+
+      <h2 id="duplicate">Duplicating and deleting</h2>
+      <p>Duplicating creates a copy you can tweak, which saves a lot of setup time. Deleting removes a product for good, so use it carefully.</p>
+
+      <p><strong>To duplicate a product:</strong></p>
+      <ol class="steps">
+        <li><strong>Open the product</strong> you want to copy from <span class="path"><span class="seg">Products</span><span class="sep">&rsaquo;</span><span class="seg">All products</span></span>.</li>
+        <li><strong>Choose Duplicate.</strong> Use the <strong>Duplicate</strong> option at the top right of the product page.</li>
+        <li><strong>Rename and adjust.</strong> Give the copy its own title, then update the price, photos, SKU, and tags.</li>
+        <li><strong>Set the status and Save.</strong> Set it to Active when ready.</li>
+      </ol>
+
+      <p><strong>To remove a product:</strong></p>
+      <ol class="steps">
+        <li><strong>Open the product.</strong></li>
+        <li><strong>Set it to Draft to hide it,</strong> or use the <strong>Archive</strong> option to tuck it away while keeping its history.</li>
+        <li><strong>Delete only if you are sure.</strong> The Delete option removes the product permanently.</li>
+      </ol>
+
+      <div class="callout callout--warn"><span class="clabel">Take care</span><p>Prefer <span class="pill pill--draft">Draft</span> or Archive over Delete. Draft and Archive hide the product but keep its details, so you can bring it back. Deleting is permanent and cannot be undone.</p></div>
+
+      <div class="pager">
+        <a href="getting-started.html"><div class="dir">Back</div><div class="ttl">&lsaquo; Getting around Shopify</div></a>
+        <a class="next" href="configurator.html"><div class="dir">Next</div><div class="ttl">Configurator products &rsaquo;</div></a>
+      </div>
+      <div class="foot">WT Farley Store Owner's Guide.</div>
+    </div>
+  </main>
+</div>
+<script src="assets/nav.js"></script>
+</body>
+</html>

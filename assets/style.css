@@ -194,3 +194,17 @@ hr{border:none;border-top:1px solid var(--steel-150);margin:2.6rem 0}
   .menu-btn{display:inline-block;margin-top:.6rem;background:rgba(255,255,255,.1);color:#fff;
     border:1px solid rgba(255,255,255,.2);border-radius:6px;padding:.4rem .8rem;font-size:.85rem;cursor:pointer}
 }
+
+/* ---------- Store deep-links ---------- */
+.storelinks{background:linear-gradient(180deg,#fff,var(--tip-bg));border:1px solid var(--tip-bd);
+  border-left:4px solid var(--blue);border-radius:0 var(--radius) var(--radius) 0;
+  padding:1rem 1.15rem;margin:1.5rem 0;box-shadow:var(--shadow)}
+.storelinks__label{font-weight:750;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--tip);margin-bottom:.65rem;display:flex;align-items:center;gap:.4rem}
+.storelinks__grid{display:flex;flex-wrap:wrap;gap:.55rem}
+.btn-store{display:inline-flex;align-items:center;gap:.45rem;background:var(--navy-900);color:#fff;
+  border:1px solid var(--navy-700);border-radius:7px;padding:.48rem .85rem;font-size:.88rem;
+  font-weight:600;line-height:1.2}
+.btn-store:hover{background:var(--blue-deep);border-color:var(--blue-deep);text-decoration:none;color:#fff}
+.btn-store::after{content:"\2197";font-size:.95em;opacity:.85;font-weight:700}
+.storelinks__note{margin:.65rem 0 0;font-size:.78rem;color:var(--steel-500)}
